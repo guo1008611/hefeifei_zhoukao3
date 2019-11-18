@@ -14,6 +14,15 @@ public class HeTong {
     private String hetongId;
     private int hePrice;
     private String beizhu;
+    private int yukuan;
+
+    public int getYukuan() {
+        return yukuan;
+    }
+
+    public void setYukuan(int yukuan) {
+        this.yukuan = yukuan;
+    }
 
     @Override
     public String toString() {
