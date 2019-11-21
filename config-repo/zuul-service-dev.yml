@@ -5,9 +5,9 @@ eureka:
 instance:
   prefer-ip-address: true
 server:
-  port: 8888
+  port: 8888 #端口
 zuul:
   routes:
     user:
       path: /api/**
-      serviceId: hetong-service
+      serviceId: feign-service #微服务
