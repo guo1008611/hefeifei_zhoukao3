@@ -6,6 +6,8 @@ eureka:
       defaultZone: http://localhost:10086/eureka
     fetch-registry: true
 spring: #数据库
+  jackson:
+    date-format: yyyy-MM-dd  #日期格式
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/1703a_springcloud?characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
     username: root
