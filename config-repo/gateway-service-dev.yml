@@ -1,0 +1,17 @@
+server:
+  port: 10010
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: feign_route
+        uri: lb://feign-service
+        predicates:
+        - Path=/gateway/**
+        filters:
+        - StripPrefix=1
+        order: 0
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
