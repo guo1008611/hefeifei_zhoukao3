@@ -6,12 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api_service" />
         <module name="config_service" />
         <module name="eureka_server" />
         <module name="feign_service" />
+        <module name="Gateway_service" />
         <module name="hetong_service" />
         <module name="zuul_service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mongodb" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

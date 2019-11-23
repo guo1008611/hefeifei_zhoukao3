@@ -1,11 +1,11 @@
 server:
-  port: 7001
+  port: 7001 #端口号
 spring:
   application:
-    name: config
+    name: config  #微服务名
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/he0709/hefeifei_zhoukao3.git
+          uri: https://github.com/he0709/hefeifei_zhoukao3.git #地址
           search-paths: config-repo

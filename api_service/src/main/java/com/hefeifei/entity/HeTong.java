@@ -1,26 +1,26 @@
 package com.hefeifei.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.io.Serializable;
+import java.math.BigDecimal;
 
 @Entity
-public class HeTong {
+public class HeTong implements Serializable {
+    private static final long serialVersionUID = 5672302424278391105L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String kid;
     private String hetongId;
-    private int hePrice;
+    private BigDecimal hePrice;
     private String beizhu;
-    private int yukuan;
+    private BigDecimal yukuan;
 
-    public int getYukuan() {
+    public BigDecimal getYukuan() {
         return yukuan;
     }
 
-    public void setYukuan(int yukuan) {
+    public void setYukuan(BigDecimal yukuan) {
         this.yukuan = yukuan;
     }
 
@@ -59,11 +59,11 @@ public class HeTong {
         this.hetongId = hetongId;
     }
 
-    public int getHePrice() {
+    public BigDecimal getHePrice() {
         return hePrice;
     }
 
-    public void setHePrice(int hePrice) {
+    public void setHePrice(BigDecimal hePrice) {
         this.hePrice = hePrice;
     }
 

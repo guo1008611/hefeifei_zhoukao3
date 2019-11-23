@@ -3,6 +3,7 @@ package com.hefeifei.entity;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.util.Date;
 @Entity
 public class HuiKuan {
@@ -13,7 +14,7 @@ public class HuiKuan {
     private String huikuanId;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date huiDate;
-    private int huiprice;
+    private BigDecimal huiprice;
     private String shouName;
     private String beizhu;
     @ManyToOne
@@ -66,11 +67,11 @@ public class HuiKuan {
         this.huiDate = huiDate;
     }
 
-    public int getHuiprice() {
+    public BigDecimal getHuiprice() {
         return huiprice;
     }
 
-    public void setHuiprice(int huiprice) {
+    public void setHuiprice(BigDecimal huiprice) {
         this.huiprice = huiprice;
     }
 

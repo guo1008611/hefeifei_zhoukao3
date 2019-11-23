@@ -12,9 +12,10 @@
         <module>config_service</module>
         <module>hetong_service</module>
         <module>eureka_server</module>
-        <module>zuul-service</module>
         <module>zuul_service</module>
         <module>feign_service</module>
+        <module>api_service</module>
+        <module>Gateway_service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -28,6 +29,7 @@
         <druid.version>1.1.10</druid.version>
     </properties>
     <dependencies>
+        <!--测试-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -46,6 +48,7 @@
         </dependencies>
     </dependencyManagement>
     <build>
+        <!--打包-->
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
